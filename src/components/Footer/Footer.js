@@ -9,26 +9,26 @@ const Footer = () => {
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
-          <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:111-111-1111">111-111-1111</LinkItem>
+          <LinkTitle>Call Me</LinkTitle>
+          <LinkItem href="tel:+46 762503192">+46 762503192</LinkItem>
         </LinkColumn>
         <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:admin@webisite.com">admin@website.com</LinkItem>
+          <LinkTitle>Email Me</LinkTitle>
+          <LinkItem href="mailto:peter@peterahlgren.com">peter@peterahlgren.com</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovating one project at a time</Slogan>
+          <Slogan>This portfolio website is built with Next.js, ❤️ and ☕.</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com">
+          <SocialIcons href="https://github.com/ahlgren1234">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://linkedin.com">
+          <SocialIcons href="https://www.linkedin.com/in/ahlgrenpeter/">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://instagram.com">
+          <SocialIcons href="https://www.instagram.com/peterahlgren/">
             <AiFillInstagram size="3rem" />
           </SocialIcons>
         </SocialContainer>

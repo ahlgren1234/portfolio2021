@@ -9,13 +9,15 @@ const Hero = (props) => (
     <LeftSection>
       <SectionTitle main center>
         Welcome To <br />
-        My Personal Portfolio
+        My Digital Garden
       </SectionTitle>
       <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        My name is Peter Ahlgren, and I'm a fullstack developer.<br />
+        I have 20 years of experience in programming and development.< br />
+        Through out the years I have been working with companies like Disney, Warner Bros, Swedish Cancer & Allergy Fund, Lexicon and many more.
       </SectionText>
-      <Button onClick={ () => window.location = 'https://google.com' }>
-        Learn More
+      <Button onClick={ () => window.location = 'mailto:peter@peterahlgren.com' }>
+        Lets talk!
       </Button>
     </LeftSection>
   </Section>
