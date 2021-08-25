@@ -53,7 +53,8 @@ const Timeline = () => {
         I have over 20 years experience of internet and programming, and over the years I have been freelancing for clients like
         Warner Bros, Disney, Swedish Cancer & Allergy Fund, Lexison and many more.<br />
         <br />
-        I have written some books and been holding courses in web design and programming. 
+        I have written some books and been holding courses in web design and programming. <br /><br />
+        You can download <a style={{ color: 'white'}} href="/files/CV-PeterAhlgren.pdf">my CV here</a>.
       </SectionText>
       
       <SectionDivider />
