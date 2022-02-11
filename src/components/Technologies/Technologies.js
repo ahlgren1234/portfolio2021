@@ -1,9 +1,20 @@
 import React from 'react';
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import {
+  Section,
+  SectionDivider,
+  SectionText,
+  SectionTitle,
+} from '../../styles/GlobalComponents';
+import {
+  List,
+  ListContainer,
+  ListItem,
+  ListParagraph,
+  ListTitle,
+} from './TechnologiesStyles';
 
-const Technologies = () =>  (
+const Technologies = () => (
   <Section id="tech">
     <SectionDivider />
     <br />
@@ -18,11 +29,18 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            React.js<br />
-            Next.js<br />
-            Bootstrap<br />
-            HTML / CSS / SCSS<br />
-            JavaScript / TypeScript<br />
+            React.js
+            <br />
+            Next.js
+            <br />
+            Bootstrap
+            <br />
+            HTML / CSS / SCSS
+            <br />
+            JavaScript / TypeScript
+            <br />
+            Swift UI
+            <br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -31,11 +49,16 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            PHP<br />
-            Node.js<br />
-            Python<br />
-            Databases<br />
-            WordPress<br />
+            PHP
+            <br />
+            Node.js
+            <br />
+            Python
+            <br />
+            Databases
+            <br />
+            WordPress
+            <br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -44,10 +67,14 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Other</ListTitle>
           <ListParagraph>
-            Git / Github<br />
-            Photoshop<br />
-            Figma<br />
-            Windows / Mac OS / Linux<br />
+            Git / Github
+            <br />
+            Photoshop
+            <br />
+            Figma
+            <br />
+            Windows / Mac OS / Linux
+            <br />
           </ListParagraph>
         </ListContainer>
       </ListItem>

@@ -1,6 +1,10 @@
 import React from 'react';
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+} from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
@@ -12,15 +16,19 @@ const Hero = (props) => (
         My Digital Garden
       </SectionTitle>
       <SectionText>
-        My name is Peter Ahlgren, and I'm a fullstack developer.<br />
-        I have 20 years of experience in programming and development.< br />
-        Through out the years I have been working with companies like Disney, Warner Bros, Swedish Cancer & Allergy Fund, Lexicon and many more.
+        My name is Peter Ahlgren, and I'm a fullstack web & app developer.
+        <br />
+        I have 20 years of experience in programming and development.
+        <br />
+        Through out the years I have been working with companies like Disney,
+        Warner Bros, Swedish Cancer & Allergy Fund, Lexicon and many more.
       </SectionText>
-      
-      <Button onClick={ () => window.location = 'mailto:peter@peterahlgren.com' }>
+
+      <Button
+        onClick={() => (window.location = 'mailto:peter@peterahlgren.com')}
+      >
         Lets talk!
       </Button>
-      
     </LeftSection>
   </Section>
 );
