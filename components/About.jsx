@@ -35,19 +35,14 @@ const qualificationData = [
     title: 'education',
     data: [
       {
-        university: 'Example University',
-        qualification: 'Bachelor of Science',
-        years: '2015 - 2018',
+        university: 'Nercia Educations, Örebro',
+        qualification: 'Application Developer',
+        years: '1998 - 1999',
       },
       {
-        university: 'Another University',
-        qualification: 'Master of Arts',
-        years: '2019 - 2021',
-      },
-      {
-        university: 'Yet Another University',
-        qualification: 'Ph.D in Computer Science',
-        years: '2021 - 2025',
+        university: 'Katrineholms Technical School, Katrineholm',
+        qualification: 'Computer Science Engineer',
+        years: '1996 - 1997',
       },
     ],
   },
@@ -55,19 +50,24 @@ const qualificationData = [
     title: 'experience',
     data: [
       {
-        company: 'Google',
-        role: 'Software Engineer',
-        years: '2018 - 2020',
+        company: 'Peter Ahlgren Consulting',
+        role: 'Full Stack App & Web Developer',
+        years: '2000 - Now',
       },
       {
-        company: 'Apple',
-        role: 'Front End Developer',
-        years: '2020 - 2022',
+        company: 'Enfo Group, Örebro',
+        role: 'Cloud Developer',
+        years: '2022 - 2023',
       },
       {
-        company: 'Acme Corp.',
-        role: 'Full Stack Developer',
-        years: '2022 - 2024',
+        company: 'Navigraph, Stockholm',
+        role: 'Senior Front End Developer',
+        years: '2021 - 2021',
+      },
+      {
+        company: 'Dormy Golf & Fashion',
+        role: 'Full Stack Web Developer',
+        years: '2015 - 2016',
       },
     ],
   },
@@ -81,13 +81,16 @@ const skillData = [
         name: 'HTML, CSS',
       },
       {
-        name: 'Front-end Development',
+        name: 'Javascript, Typescript',
       },
       {
-        name: 'Javascript, PHP',
+        name: 'React, Next.js, Vue, Angular, React Native',
       },
       {
-        name: 'Back-end Development',
+        name: 'Git, Node, Databases, rest API, GraphQL',
+      },
+      {
+        name: 'WordPress, Webflow',
       },
     ],
   },
@@ -117,13 +120,13 @@ const About = () => {
   }
 
   return (
-    <section className="xl:h-[860px] pb-12 xl:py-24">
+    <section className="xl:h-[980px] pb-12 xl:py-24">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">About Me</h2>
         <div className="flex flex-col xl:flex-row">
           { /* image */}
           <div className="hidden xl:flex flex-1 relative">
-            <DevImg containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative" imgSrc="/about/developer.png" />
+            <DevImg containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative" imgSrc="/about/about-peter.png" />
           </div>
           { /* tabs */}
           <div className="flex-1">

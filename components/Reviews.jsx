@@ -11,40 +11,28 @@ import { Pagination } from 'swiper/modules'
 
 const reviewsData = [
   {
-    avatar: '/reviews/avatar-1.png',
-    name: 'Richard Thompson',
-    job: 'Chef',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos quo voluptas tempora delectus dicta.'
+    avatar: '/reviews/johndoe.png',
+    name: 'Scott Williams',
+    job: 'CEO',
+    review: 'My experience with Webbteam and Peter is that they are very professional. Our collaboration went very well, and we are very happy with the result. 5 stars from us.'
   },
   {
-    avatar: '/reviews/avatar-2.png',
-    name: 'Evelyn Anderson',
-    job: 'Interior Designer',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos quo voluptas tempora delectus dicta.'
+    avatar: '/reviews/johndoe.png',
+    name: 'Björn Eremo',
+    job: 'Business Owner',
+    review: 'Jag är alltid nöjd med resultatet av arbetet som Webb Team utför. Peter är kunnig flexibel och väldigt lyhörd. Hemsidan blev mycket bättre än jag vågat hoppas på och jag känner stort förtroende i det fortsatta samarbetet. Jag kan varmt rekommendera Webb Team!'
   },
   {
-    avatar: '/reviews/avatar-3.png',
-    name: 'John Doe',
-    job: 'Game Developer',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos quo voluptas tempora delectus dicta.'
+    avatar: '/reviews/johndoe.png',
+    name: 'Anders Hermansson',
+    job: 'Business Owner',
+    review: 'Vi fick en hemsida som uppfyllde alla våra önskemål och mer därtill. Det var ett bra samarbete som vi gärna gör om.'
   },
   {
-    avatar: '/reviews/avatar-4.png',
-    name: 'Emily Smith',
-    job: 'Therapist',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos quo voluptas tempora delectus dicta.'
-  },
-  {
-    avatar: '/reviews/avatar-5.png',
-    name: 'Oliver Taylor',
-    job: 'Engineer',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos quo voluptas tempora delectus dicta.'
-  },
-  {
-    avatar: '/reviews/avatar-6.png',
-    name: 'Mason Wilson',
-    job: 'Video Editor',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos quo voluptas tempora delectus dicta.'
+    avatar: '/reviews/johndoe.png',
+    name: 'Patrik Nilsson',
+    job: 'CEO',
+    review: 'Top of the line. Professional service and fast deliveries. Everything we could ask for and more.'
   },
 ]
 
@@ -53,11 +41,12 @@ const Reviews = () => {
     <section className="mb-12 xl:mb-32">
       <div className="container mx-auto">
         <h2 className="section-title mb-12 text-center mx-auto">Reviews</h2>
+        <p className="mx-auto text-center subtitle text-lg text-muted-foreground">What some of my clients say about me (and my business <a href="https://webbteam.se" target="_blank">WebbTeam</a>):</p>
         { /* slider */}
-        <Swiper slidesPerView={1} breakpoints={{ 640: { slidesPerView: 2 }, 1400: {slidesPerView: 3}, }} spaceBetween={30} modules={[Pagination]} pagination={{clickable: true}} className="h-[350px]">
+        <Swiper slidesPerView={1} breakpoints={{ 640: { slidesPerView: 2 }, 1400: {slidesPerView: 3}, }} spaceBetween={30} modules={[Pagination]} pagination={{clickable: true}} className="h-[420px]">
           {reviewsData.map((person, index) => {
             return <SwiperSlide key={index}>
-              <Card className="bg-[#fef9f5] dark:bg-secondary/40 p-8 min-h-[300px]">
+              <Card className="bg-[#fef9f5] dark:bg-secondary/40 p-8 min-h-[370px]">
                 <CardHeader className="p-0 mb-10">
                   <div className="flex items-center gap-x-4">
                     { /* image */}

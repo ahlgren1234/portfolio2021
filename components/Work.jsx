@@ -14,76 +14,36 @@ import ProjectCard from "@/components/ProjectCard"
 
 const projectData = [
   {
-    image: '/work/3.png',
+    image: '/work/Djungelgymmet.png',
+    category: 'WordPress',
+    name: 'Djungelgymmet',
+    description: 'Website for a local outdoors gym.',
+    link: 'https://www.djungelgymmet.se/',
+    github: '',
+  },
+  {
+    image: '/work/Airbnb-Clone.png',
     category: 'react js',
-    name: 'Nexa Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
+    name: 'Airbnb Clone',
+    description: 'A clone of the Airbnb website made in React JS.',
+    link: 'https://airbnb-clone-psi-sand.vercel.app/',
+    github: 'https://github.com/ahlgren1234/airbnb-clone',
   },
   {
-    image: '/work/4.png',
-    category: 'react js',
-    name: 'Solstice Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
+    image: '/work/Footprint.png',
+    category: 'CSS',
+    name: 'Footprint CSS Library',
+    description: 'A small CSS Framework. Works like Boostrap, just better ;-).',
+    link: 'http://ahlgren1234.github.io/footprint/',
+    github: 'https://github.com/ahlgren1234/footprint',
   },
   {
-    image: '/work/2.png',
-    category: 'next js',
-    name: 'Lumina Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/1.png',
-    category: 'next js',
-    name: 'Evolve Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/3.png',
-    category: 'next js',
-    name: 'Ignite Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/4.png',
-    category: 'next js',
-    name: 'Envision Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/1.png',
-    category: 'fullstack',
-    name: 'Serenity Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/3.png',
-    category: 'next js',
-    name: 'Nova Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/2.png',
-    category: 'next js',
-    name: 'Zenith Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
+    image: '/work/enjoy-mvc.png',
+    category: 'PHP',
+    name: 'Enjoy MVC Framework',
+    description: 'Fully working MVC Framework written in PHP.',
+    link: '',
+    github: 'https://github.com/ahlgren1234/enjoy-mvc',
   },
 ]
 
@@ -93,10 +53,10 @@ const Work = () => {
       <div className="container mx-auto">
         { /* text */}
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
-          <h2 className="section-title mb-4">Latest Projects</h2>
-          <p className="subtitle mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h2 className="section-title mb-4">Some of My Projects</h2>
+          <p className="subtitle mb-8">Here you can see some of all the projects, that I have had the pleasure to work on.</p>
           <Link href="/projects">
-            <Button>All Projects</Button>
+            <Button>More Projects</Button>
           </Link>
         </div>
         { /* slider */}

@@ -5,77 +5,46 @@ import ProjectCard from '@/components/ProjectCard'
 
 const projectData = [
   {
-    image: '/work/3.png',
+    image: '/work/Djungelgymmet.png',
+    category: 'WordPress',
+    name: 'Djungelgymmet',
+    description: 'Website for a local outdoors gym.',
+    link: 'https://www.djungelgymmet.se/',
+    github: '',
+  },
+  {
+    image: '/work/Airbnb-Clone.png',
     category: 'react js',
-    name: 'Nexa Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
+    name: 'Airbnb Clone',
+    description: 'A clone of the Airbnb website made in React JS.',
+    link: 'https://airbnb-clone-psi-sand.vercel.app/',
+    github: 'https://github.com/ahlgren1234/airbnb-clone',
   },
   {
-    image: '/work/4.png',
-    category: 'react js',
-    name: 'Solstice Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
+    image: '/work/Footprint.png',
+    category: 'CSS',
+    name: 'Footprint CSS Library',
+    description: 'A small CSS Framework. Works like Boostrap, just better ;-).',
+    link: 'http://ahlgren1234.github.io/footprint/',
+    github: 'https://github.com/ahlgren1234/footprint',
   },
   {
-    image: '/work/2.png',
-    category: 'next js',
-    name: 'Lumina Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
+    image: '/work/enjoy-mvc.png',
+    category: 'PHP',
+    name: 'Enjoy MVC Framework',
+    description: 'Fully working MVC Framework written in PHP.',
+    link: '',
+    github: 'https://github.com/ahlgren1234/enjoy-mvc',
   },
   {
-    image: '/work/1.png',
-    category: 'next js',
-    name: 'Evolve Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
+    image: '/work/coming-soon.png',
+    category: 'Webflow',
+    name: 'WebbTeam',
+    description: 'Website for my little webdesign studio.',
+    link: 'https://webbteam.se',
+    github: '',
   },
-  {
-    image: '/work/3.png',
-    category: 'next js',
-    name: 'Ignite Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/4.png',
-    category: 'next js',
-    name: 'Envision Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/1.png',
-    category: 'fullstack',
-    name: 'Serenity Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/3.png',
-    category: 'next js',
-    name: 'Nova Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/2.png',
-    category: 'next js',
-    name: 'Zenith Website',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
-  },
+  
 ]
 
 // remove category duplicates
@@ -93,7 +62,7 @@ const Projects = () => {
   return (
     <section className='min-h-screen pt-12'>
       <div className='container mx-auto'>
-        <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>My Projects</h2>
+        <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>Some Of My Projects</h2>
         { /* tabs */}
         <Tabs defaultValue={category} className='mb-24 xl:mb-48'>
           <TabsList className="w-full grid h-full md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">

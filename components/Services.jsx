@@ -5,17 +5,17 @@ const servicesData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
     title: 'Web Design',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, repellat.'
+    description: 'I design a modern, selling and beautiful website for you in Figma. After that, I can convert it to HTML & CSS for you too.'
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: 'Web Development',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, repellat.'
+    description: 'I develop your website using the latest technologies, usually React or Next.js. What ever functionality you want, I can create it for you.'
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
     title: 'App Development',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, repellat.'
+    description: 'If you need a mobile app, I can create it for you using React Native, so it will be professionally working on both iPhone and Android devices.'
   },
 ]
 
