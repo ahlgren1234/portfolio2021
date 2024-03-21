@@ -20,6 +20,9 @@ module.exports = {
       "xl": "1400px",
     },
     extend: {
+      fontFamily: {
+        marker: ["Permanent Marker", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

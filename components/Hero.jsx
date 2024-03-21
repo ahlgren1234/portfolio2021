@@ -16,13 +16,13 @@ import Image from "next/image"
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-12 xl:py-24 h-[90vh] xl:h-[78vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container relative mx-auto">
         <Image src="/hero/notice-1.png" height={120} width={120} alt="" className="hidden xl:flex absolute top-0 right-[50px] -mt-[80px] animate-bounce z-10000" />
         <div className="flex justify-between gap-x-8">
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Web Developer</div>
-            <h1 className="mb-4 h1">Hello, my name is Peter Ahlgren</h1>
+            <h1 className="mb-4 font-marker h1">Hello, my name is Peter Ahlgren</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">I'm a fullstack web & app developer.<br />
             I have <strong className="text-primary">20 years of experience</strong> in programming and development.<br />
             Through out the years I have been working with companies like <strong className="text-primary">Disney, Warner Bros, Swedish Cancer & Allergy Fund, Lexicon and many more</strong>.</p>
