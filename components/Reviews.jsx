@@ -14,13 +14,13 @@ const reviewsData = [
     avatar: '/reviews/johndoe.png',
     name: 'Scott Williams',
     job: 'CEO',
-    review: 'My experience with Webbteam and Peter is that they are very professional. Our collaboration went very well, and we are very happy with the result. 5 stars from us.'
+    review: 'My experience with  Peter is that they are very professional. Our collaboration went very well, and we are very happy with the result. 5 stars from us.'
   },
   {
     avatar: '/reviews/johndoe.png',
     name: 'Björn Eremo',
     job: 'Business Owner',
-    review: 'Jag är alltid nöjd med resultatet av arbetet som Webb Team utför. Peter är kunnig flexibel och väldigt lyhörd. Hemsidan blev mycket bättre än jag vågat hoppas på och jag känner stort förtroende i det fortsatta samarbetet. Jag kan varmt rekommendera Webb Team!'
+    review: 'Jag är alltid nöjd med resultatet av arbetet som Peter utför. Peter är kunnig flexibel och väldigt lyhörd. Hemsidan blev mycket bättre än jag vågat hoppas på och jag känner stort förtroende i det fortsatta samarbetet. Jag kan varmt rekommendera Peter!'
   },
   {
     avatar: '/reviews/johndoe.png',
@@ -40,8 +40,8 @@ const Reviews = () => {
   return (
     <section className="mb-12 xl:mb-32">
       <div className="container mx-auto">
-        <h2 className="section-title mb-12 text-center mx-auto">Reviews</h2>
-        <p className="mx-auto text-center subtitle text-lg text-muted-foreground">What some of my clients say about me (and my business <a href="https://webbteam.se" target="_blank">WebbTeam</a>):</p>
+        <h2 className="mx-auto mb-12 text-center section-title">Reviews</h2>
+        <p className="mx-auto text-lg text-center subtitle text-muted-foreground">What some of my clients say about me :</p>
         { /* slider */}
         <Swiper slidesPerView={1} breakpoints={{ 640: { slidesPerView: 2 }, 1400: {slidesPerView: 3}, }} spaceBetween={30} modules={[Pagination]} pagination={{clickable: true}} className="h-[420px]">
           {reviewsData.map((person, index) => {

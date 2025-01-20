@@ -10,7 +10,7 @@ const servicesData = [
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: 'Web Development',
-    description: 'I develop your website using the latest technologies, usually React or Next.js. What ever functionality you want, I can create it for you.'
+    description: 'I develop your website using the latest technologies, usually React, Next.js or C# and .NET. What ever functionality you want, I can create it for you.'
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
@@ -23,9 +23,9 @@ const Services = () => {
   return (
     <section className='mb-12 xl:mb-36'>
       <div className='container mx-auto'>
-        <h2 className='section-title mb-12 xl:mb-24 text-center mx-auto'>My Services</h2>
+        <h2 className='mx-auto mb-12 text-center section-title xl:mb-24'>My Services</h2>
         { /* Grid items */}
-        <div className='grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8'>
+        <div className='grid justify-center xl:grid-cols-3 gap-y-12 xl:gap-y-24 xl:gap-x-8'>
           {servicesData.map((item, index) => {
             return (
               <Card className="w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative" key={index}>

@@ -35,6 +35,11 @@ const qualificationData = [
     title: 'education',
     data: [
       {
+        university: 'Lexicon IT Professionals, Örebro',
+        qualification: 'IT operations/support technician',
+        years: '2024 - 2024',
+      },
+      {
         university: 'Nercia Educations, Örebro',
         qualification: 'Application Developer',
         years: '1998 - 1999',
@@ -84,7 +89,10 @@ const skillData = [
         name: 'Javascript, Typescript',
       },
       {
-        name: 'React, Next.js, Vue, Angular, React Native',
+        name: 'React, Next.js, Vue, React Native',
+      },
+      {
+        name: 'C#, .NET',
       },
       {
         name: 'Git, Node, Databases, rest API, GraphQL',
@@ -122,10 +130,10 @@ const About = () => {
   return (
     <section className="xl:h-[980px] pb-12 xl:py-24">
       <div className="container mx-auto">
-        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">About Me</h2>
+        <h2 className="mx-auto mb-8 text-center section-title xl:mb-16">About Me</h2>
         <div className="flex flex-col xl:flex-row">
           { /* image */}
-          <div className="hidden xl:flex flex-1 relative">
+          <div className="relative flex-1 hidden xl:flex">
             <DevImg containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative" imgSrc="/about/about-peter.png" />
           </div>
           { /* tabs */}
@@ -143,18 +151,18 @@ const About = () => {
                 </TabsTrigger>
               </TabsList>
               { /* tabs content */}
-              <div className="text-lg mt-12 xl:mt-8">
+              <div className="mt-12 text-lg xl:mt-8">
                 { /* personal info */ }
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-4">Unmatched Service Quality for Over 20 Years</h3>
-                    <p className="subtitle max-w-xl mx-auto xl:mx-0">
+                    <h3 className="mb-4 h3">Unmatched Service Quality for Over 20 Years</h3>
+                    <p className="max-w-xl mx-auto subtitle xl:mx-0">
                       I specialize in crafting intuitive websites with cutting-edge technology, delivering dynamic and engaging user experiences.
                     </p>
                     { /* icons */}
-                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                    <div className="grid gap-4 mb-12 xl:grid-cols-2">
                       {infoData.map((item, index) => {
-                        return <div className="flex items-center gap-x-4 mx-auto xl:mx-0" key={index}>
+                        return <div className="flex items-center mx-auto gap-x-4 xl:mx-0" key={index}>
                           <div className="text-primary">{ item.icon }</div>
                           <div>{ item.text }</div>
                         </div>
@@ -171,14 +179,14 @@ const About = () => {
                 { /* qualifications */ }
                 <TabsContent value="qualifications">
                   <div>
-                    <h3 className="h3 mb-8 text-center xl:text-left">My Awesome Journey</h3>
+                    <h3 className="mb-8 text-center h3 xl:text-left">My Awesome Journey</h3>
                     { /* experience & education wrapper */}
                     <div className="grid md:grid-cols-2 gap-y-8">
                       { /* experience */}
                       <div className="flex flex-col gap-y-6">
                         <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <Briefcase />
-                          <h4 className="h4 capitalize font-medium">
+                          <h4 className="font-medium capitalize h4">
                             {getData(qualificationData, 'experience').title}
                           </h4>
                         </div>
@@ -192,8 +200,8 @@ const About = () => {
                                   <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                 </div>
                                 <div>
-                                  <div className="font-semibold text-xl leading-none mb-2">{company}</div>
-                                  <div className="text-lg leading-none text-muted-foreground mb-4">{role}</div>
+                                  <div className="mb-2 text-xl font-semibold leading-none">{company}</div>
+                                  <div className="mb-4 text-lg leading-none text-muted-foreground">{role}</div>
                                   <div className="text-base font-medium">{years}</div>
                                 </div>
                               </div>
@@ -205,7 +213,7 @@ const About = () => {
                       <div className="flex flex-col gap-y-6">
                         <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <GraduationCap size={28} />
-                          <h4 className="h4 capitalize font-medium">
+                          <h4 className="font-medium capitalize h4">
                             {getData(qualificationData, 'education').title}
                           </h4>
                         </div>
@@ -219,8 +227,8 @@ const About = () => {
                                   <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                 </div>
                                 <div>
-                                  <div className="font-semibold text-xl leading-none mb-2">{university}</div>
-                                  <div className="text-lg leading-none text-muted-foreground mb-4">{qualification}</div>
+                                  <div className="mb-2 text-xl font-semibold leading-none">{university}</div>
+                                  <div className="mb-4 text-lg leading-none text-muted-foreground">{qualification}</div>
                                   <div className="text-base font-medium">{years}</div>
                                 </div>
                               </div>
@@ -234,17 +242,17 @@ const About = () => {
                 { /* skills */ }
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8">What I Use Everyday</h3>
+                    <h3 className="mb-8 h3">What I Use Everyday</h3>
                     { /* skills */ }
                     <div className="mb-16">
-                      <h4 className="text-xl font-semibold mb-2">Skills</h4>
-                      <div className="border-b border-border mb-4"></div>
+                      <h4 className="mb-2 text-xl font-semibold">Skills</h4>
+                      <div className="mb-4 border-b border-border"></div>
                       { /* skills list */}
                       <div>
                         {getData(skillData, 'skills').data.map((item, index) => {
                           const {name} = item
                           return (
-                            <div className="w-2/4 text-center xl:text-left mx-auto xl:mx-0" key={index}>
+                            <div className="w-2/4 mx-auto text-center xl:text-left xl:mx-0" key={index}>
                               <div className="font-medium">{name}</div>
                             </div>
                           )
@@ -253,10 +261,10 @@ const About = () => {
                     </div>
                     { /* tools */}
                     <div>
-                      <h4 className="text-xl font-semibold mb-2 xl:text-left">Tools</h4>
-                      <div className="border-b border-border mb-4"></div>
+                      <h4 className="mb-2 text-xl font-semibold xl:text-left">Tools</h4>
+                      <div className="mb-4 border-b border-border"></div>
                       { /* tool list */ }
-                      <div className="flex gap-x-8 justify-center xl:justify-start">
+                      <div className="flex justify-center gap-x-8 xl:justify-start">
                         {getData(skillData, 'tools').data.map((item, index) => {
                           const { imgPath } = item
                           return (
