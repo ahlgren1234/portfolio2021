@@ -16,11 +16,6 @@ const certifications = [
     category: 'Security',
   },
   {
-    title: 'AZ-900: Azure Fundamentals',
-    issuer: 'Microsoft',
-    category: 'Cloud Computing',
-  },
-  {
     title: 'Networking Basics',
     issuer: 'Cisco',
     category: 'Networking',
