@@ -20,6 +20,13 @@ const projects = [
     external: '#',
   },
   {
+    title: 'React Elegant Toasts',
+    description: 'A lightweight and customizable toast notification library for React applications. Features elegant animations, multiple toast types, and a modern design system. Easy to integrate with any React project and fully customizable with support for different positions and styles.',
+    tech: ['React', 'TypeScript', 'CSS3', 'npm package', 'GitHub Pages'],
+    github: 'https://github.com/ahlgren1234/react-elegant-toasts',
+    external: 'https://ahlgren1234.github.io/react-elegant-toasts/',
+  },
+  {
     title: 'Color Palette Creator',
     description: 'An intuitive web application for creating and exploring color palettes. Users can generate, customize, and save color combinations for their design projects. Features a modern, responsive interface and real-time color preview capabilities.',
     tech: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Create React App', 'Vercel'],
