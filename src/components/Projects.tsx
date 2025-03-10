@@ -10,7 +10,7 @@ const projects = [
     description: 'A production-ready SaaS starter kit with comprehensive features including JWT authentication, Stripe subscription billing, email verification via Resend, and MongoDB integration. Features a modern UI with dark mode, responsive design, and role-based access control. Perfect for quickly launching professional SaaS applications with enterprise-grade security and scalability.',
     tech: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'Stripe', 'JWT', 'Resend', 'Framer Motion'],
     github: 'https://github.com/ahlgren1234/saas-starter',
-    external: '#',
+    external: 'https://saas-starter-website-gamma.vercel.app/',
   },
   {
     title: 'Currency Converter',
