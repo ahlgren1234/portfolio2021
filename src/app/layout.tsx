@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} antialiased`}>
         <ClientLayout caveatFont={caveat.style.fontFamily}>{children}</ClientLayout>
+        <Analytics />
       </body>
     </html>
   );
