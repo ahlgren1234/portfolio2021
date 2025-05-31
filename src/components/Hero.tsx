@@ -5,13 +5,13 @@ import { IconBrandGithub, IconBrandLinkedin, IconFileDownload } from '@tabler/ic
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-4 sm:px-6 pt-24">
+    <section className="py-16 md:py-24 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto relative">
         <motion.div
           initial={{ opacity: 0, y: 20, rotate: -8 }}
           animate={{ opacity: 1, y: 0, rotate: -8 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="absolute -top-24 right-0 sm:-right-20 lg:-right-32 z-30"
+          className="absolute -top-16 right-0 sm:-right-20 lg:-right-32 z-30"
         >
           <span className="handwritten-large text-right block">
             Crafting digital<br />experiences with<br />passion & precision!
