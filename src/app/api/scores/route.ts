@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
+import Redis from 'ioredis';
 
 interface Score {
   name: string;
@@ -8,44 +7,15 @@ interface Score {
   date: string;
 }
 
-const dataFilePath = path.join(process.cwd(), 'data', 'scores.json');
+const SCORES_KEY = 'game_scores';
 
-// Ensure the data directory exists
-async function ensureDataDirectory() {
-  const dataDir = path.join(process.cwd(), 'data');
-  try {
-    await fs.access(dataDir);
-  } catch {
-    await fs.mkdir(dataDir);
-  }
-}
-
-// Initialize scores file if it doesn't exist
-async function initializeScoresFile() {
-  try {
-    await fs.access(dataFilePath);
-  } catch {
-    await fs.writeFile(dataFilePath, JSON.stringify([]));
-  }
-}
-
-// Read scores with error handling
-async function readScores(): Promise<Score[]> {
-  try {
-    const fileContent = await fs.readFile(dataFilePath, 'utf-8');
-    const scores = JSON.parse(fileContent);
-    return Array.isArray(scores) ? scores : [];
-  } catch (error) {
-    console.error('Error reading scores:', error);
-    return [];
-  }
-}
+// Initialize Redis client
+const redis = new Redis(process.env.REDIS_URL || 'redis://localhost:6379');
 
 export async function GET() {
   try {
-    await ensureDataDirectory();
-    await initializeScoresFile();
-    const scores = await readScores();
+    const scoresJson = await redis.get(SCORES_KEY);
+    const scores = scoresJson ? JSON.parse(scoresJson) : [];
     return NextResponse.json(scores);
   } catch (error) {
     console.error('Error in GET /api/scores:', error);
@@ -55,9 +25,6 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
-    await ensureDataDirectory();
-    await initializeScoresFile();
-
     const newScore = await request.json();
     
     // Validate new score
@@ -69,7 +36,8 @@ export async function POST(request: Request) {
     }
 
     // Read existing scores
-    const scores = await readScores();
+    const scoresJson = await redis.get(SCORES_KEY);
+    const scores = scoresJson ? JSON.parse(scoresJson) : [];
     
     // Add new score
     scores.push({
@@ -83,8 +51,8 @@ export async function POST(request: Request) {
       .sort((a: Score, b: Score) => b.score - a.score)
       .slice(0, 10);
     
-    // Write back to file
-    await fs.writeFile(dataFilePath, JSON.stringify(sortedScores, null, 2));
+    // Save back to Redis
+    await redis.set(SCORES_KEY, JSON.stringify(sortedScores));
     
     return NextResponse.json(sortedScores);
   } catch (error) {
