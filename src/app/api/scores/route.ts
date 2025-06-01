@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import Redis from 'ioredis';
 
 interface Score {
   name: string;
@@ -7,15 +6,11 @@ interface Score {
   date: string;
 }
 
-const SCORES_KEY = 'game_scores';
-
-// Initialize Redis client
-const redis = new Redis(process.env.REDIS_URL || 'redis://localhost:6379');
+// In-memory storage for scores
+let scores: Score[] = [];
 
 export async function GET() {
   try {
-    const scoresJson = await redis.get(SCORES_KEY);
-    const scores = scoresJson ? JSON.parse(scoresJson) : [];
     return NextResponse.json(scores);
   } catch (error) {
     console.error('Error in GET /api/scores:', error);
@@ -35,10 +30,6 @@ export async function POST(request: Request) {
       );
     }
 
-    // Read existing scores
-    const scoresJson = await redis.get(SCORES_KEY);
-    const scores = scoresJson ? JSON.parse(scoresJson) : [];
-    
     // Add new score
     scores.push({
       name: newScore.name,
@@ -47,14 +38,11 @@ export async function POST(request: Request) {
     });
     
     // Sort by score and keep only top 10
-    const sortedScores = scores
+    scores = scores
       .sort((a: Score, b: Score) => b.score - a.score)
       .slice(0, 10);
     
-    // Save back to Redis
-    await redis.set(SCORES_KEY, JSON.stringify(sortedScores));
-    
-    return NextResponse.json(sortedScores);
+    return NextResponse.json(scores);
   } catch (error) {
     console.error('Error in POST /api/scores:', error);
     return NextResponse.json([], { status: 200 });
