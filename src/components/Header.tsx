@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   return (
@@ -38,6 +41,16 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+      {/* Easter Egg Notification */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2 }}
+        className="absolute bottom-4 left-0 right-0 text-center text-sm text-gray-400 animate-pulse"
+      >
+        🥚 Look for an easter egg...
+      </motion.div>
     </header>
   );
 };
