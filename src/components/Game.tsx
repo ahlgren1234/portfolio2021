@@ -9,7 +9,7 @@ interface Score {
   name: string;
   score: number;
   date: string;
-}
+} //
 
 export default function Game() {
   const [score, setScore] = useState(0);
