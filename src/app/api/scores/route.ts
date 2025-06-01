@@ -2,6 +2,12 @@ import { NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
 
+interface Score {
+  name: string;
+  score: number;
+  date: string;
+}
+
 const dataFilePath = path.join(process.cwd(), 'data', 'scores.json');
 
 // Ensure the data directory exists
@@ -57,7 +63,7 @@ export async function POST(request: Request) {
     
     // Sort by score and keep only top 10
     const sortedScores = scores
-      .sort((a: any, b: any) => b.score - a.score)
+      .sort((a: Score, b: Score) => b.score - a.score)
       .slice(0, 10);
     
     // Write back to file
