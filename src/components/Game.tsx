@@ -121,7 +121,7 @@ export default function Game() {
   if (!isVisible) return null;
 
   return (
-    <section className="py-24 px-4 sm:px-6">
+    <section id="game" className="py-32 px-4 sm:px-6">
       <div className="max-w-2xl mx-auto">
         <GlitchEffect intensity={0.6}>
           <h2 className="text-3xl font-bold text-center mb-8">Catch the Dot! 🎮</h2>

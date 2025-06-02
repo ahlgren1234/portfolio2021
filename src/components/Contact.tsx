@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6">
+    <section id="contact" className="py-32 px-4 sm:px-6">
       <div className="max-w-3xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0 }}

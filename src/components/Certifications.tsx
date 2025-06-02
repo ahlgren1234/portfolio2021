@@ -54,7 +54,7 @@ const certifications = [
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-20 px-4 sm:px-6">
+    <section id="certifications" className="py-32 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto">
         <div className="relative">
           <motion.h2

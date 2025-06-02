@@ -19,7 +19,7 @@ const skills = [
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-4 sm:px-6">
+    <section id="about" className="py-32 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto">
         <div className="relative">
           <motion.h2
