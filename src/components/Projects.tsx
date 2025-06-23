@@ -6,6 +6,13 @@ import Annotation from './Annotation';
 
 const projects = [
   {
+    title: 'ChatGPT Folder Organizer',
+    description: 'Ett Chrome-tillägg som låter dig sortera och organisera dina ChatGPT-konversationer i mappar. Håll ordning, hitta snabbt och jobba mer effektivt med en modern och snygg sidopanel direkt i ChatGPT.',
+    tech: ['Chrome Extension', 'TypeScript', 'React', 'Manifest V3', 'Tailwind CSS'],
+    github: '',
+    external: 'https://chromewebstore.google.com/detail/chatgpt-folder-organizer/kmcbbbkhhmbfhbhiimaejllgepilimom',
+  },
+  {
     title: 'SaaS Starter Kit',
     description: 'A production-ready SaaS starter kit with comprehensive features including JWT authentication, Stripe subscription billing, email verification via Resend, and MongoDB integration. Features a modern UI with dark mode, responsive design, and role-based access control. Perfect for quickly launching professional SaaS applications with enterprise-grade security and scalability.',
     tech: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'Stripe', 'JWT', 'Resend', 'Framer Motion'],
