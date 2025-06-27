@@ -25,7 +25,7 @@ const Header = () => {
               Software Engineer & Web Developer
             </p>
             <p className="text-xl text-gray-400">
-              Jag skapar moderna och användarvänliga webbapplikationer med fokus på prestanda och användarupplevelse.
+              I create modern and user-friendly web applications with a focus on performance and user experience.
             </p>
           </div>
           <div className="relative w-64 h-64 md:w-96 md:h-96">

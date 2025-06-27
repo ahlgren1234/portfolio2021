@@ -14,10 +14,10 @@ export default function LatestProject() {
           className="flex-1"
         >
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-blue-700 dark:text-blue-300">
-            Senaste Projektet: ChatGPT Folder Organizer
+            Latest Project: ChatGPT Folder Organizer
           </h2>
           <p className="text-gray-700 dark:text-gray-300 mb-6">
-            Ett Chrome-tillägg som låter dig sortera och organisera dina ChatGPT-konversationer i mappar. Håll ordning, hitta snabbt och jobba mer effektivt med en modern och snygg sidopanel direkt i ChatGPT.
+            A Chrome extension that lets you sort and organize your ChatGPT conversations into folders. Stay organized, find your chats quickly, and work more efficiently with a modern and sleek sidebar directly in ChatGPT.
           </p>
           <a
             href="https://chromewebstore.google.com/detail/chatgpt-folder-organizer/kmcbbbkhhmbfhbhiimaejllgepilimom"
@@ -25,7 +25,7 @@ export default function LatestProject() {
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors shadow-lg"
           >
-            Se tillägget i Chrome Web Store
+            View on Chrome Web Store
           </a>
         </motion.div>
         <motion.div
