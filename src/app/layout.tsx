@@ -4,6 +4,7 @@ import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
 import { Analytics } from "@vercel/analytics/react"
 import Header from "@/components/Header";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Header />
         <ClientLayout caveatFont={caveat.style.fontFamily}>{children}</ClientLayout>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
