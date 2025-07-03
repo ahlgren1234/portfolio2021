@@ -27,12 +27,17 @@ export default function LatestProject() {
           >
             View on Chrome Web Store
           </a>
+          <div className="mt-12 md:block hidden">
+            <a href="#projects" className="handwritten block text-xl text-blue-600 dark:text-blue-400 hover:underline transition-colors">
+              See some other of my projects
+            </a>
+          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="flex-1 flex justify-center"
+          className="flex-1 flex flex-col items-center justify-center"
         >
           <Image
             src="/folders-dump.png"
@@ -42,6 +47,11 @@ export default function LatestProject() {
             className="rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900"
             priority
           />
+          <div className="mt-12 md:hidden block w-full">
+            <a href="#projects" className="handwritten block text-xl text-blue-600 dark:text-blue-400 hover:underline transition-colors text-center">
+              See some other of my projects
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
